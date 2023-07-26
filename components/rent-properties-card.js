@@ -1,4 +1,5 @@
 import PropertyCard from "./property-card";
+import Link from "next/link";
 
 const RentPropertiesCard = () => {
   return (
@@ -16,68 +17,35 @@ const RentPropertiesCard = () => {
         </div>
         <div className="self-stretch flex flex-row flex-wrap py-0 px-2.5 items-center justify-center gap-[32px]">
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc7@2x.png"
-            car="/car5.svg"
-            bathtub="/bathtub5.svg"
-            arrowsOut="/arrowsout2.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork6.svg"
-            heart="/heart2.svg"
-            plus="/plus7.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc7@2x.png"
+            name="32 Allium Place ,Orlando FL"
+            price="590,623"
           />
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc8@2x.png"
-            car="/car5.svg"
-            bathtub="/bathtub5.svg"
-            arrowsOut="/arrowsout2.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork6.svg"
-            heart="/heart2.svg"
-            plus="/plus8.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc8@2x.png"
+            name="32 Allium Place ,Orlando FL"
+            price="590,623"
           />
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc9@2x.png"
-            car="/car6.svg"
-            bathtub="/bathtub.svg"
-            arrowsOut="/arrowsout3.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork7.svg"
-            heart="/heart2.svg"
-            plus="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc9@2x.png"
+            name="32 Allium Place ,Orlando FL"
+            price="590,623"
           />
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc10@2x.png"
-            car="/car6.svg"
-            bathtub="/bathtub.svg"
-            arrowsOut="/arrowsout3.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork7.svg"
-            heart="/heart2.svg"
-            plus="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc10@2x.png"
+            name="32 Allium Place ,Orlando FL"
+            price="590,623"
           />
         </div>
       </div>
-      <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start">
+      <Link
+        href="/properties"
+        className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start"
+      >
         <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
           Load more listing
         </div>
-      </button>
+      </Link>
     </div>
   );
 };
